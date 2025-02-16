@@ -15,36 +15,6 @@
         <button class="no" onclick="handleNoClick(this)">No</button>
     </div>
 
-    <script>
-        let noClickCount = 0;
-        
-        function handleNoClick(button) {
-            noClickCount++;
-            
-            // Shrink the button size
-            const currentWidth = parseFloat(getComputedStyle(button).width);
-            const currentHeight = parseFloat(getComputedStyle(button).height);
-            button.style.width = `${currentWidth * 0.9}px`;
-            button.style.height = `${currentHeight * 0.9}px`;
-            
-            // Shrink the text size proportionally
-            const currentFontSize = parseFloat(getComputedStyle(button).fontSize);
-            button.style.fontSize = `${currentFontSize * 0.9}px`;
-            
-            // Add shake animation
-            button.classList.add("shake");
-            setTimeout(() => button.classList.remove("shake"), 300);
-            
-            if (noClickCount === 5) {
-                alert("Stop being annoying and a little hoe");
-            }
-            if (noClickCount===10){
-                alert("BRO STOP DO YOU NOT LIKE ME OR SMTH")
-            }
-            if (noClickCount===15){
-                alert("Thats it you're getting touched")
-            }
-        }
-    </script>
+
 </body>
 </html>
